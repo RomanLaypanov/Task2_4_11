@@ -16,9 +16,12 @@ public class Institute {
     }
 
     public static class LazyStudent extends Student {
+        public LazyStudent(){
+            super("Сегодня не учусь, мне лень.");
+        }
         @Override
         public void study() {
-            System.out.println("Сегодня не учусь, мне лень.");
+            System.out.println(studying);
         }
     }
 }
